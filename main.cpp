@@ -6,15 +6,15 @@ using namespace std;
 
 void gameOverScreen();
 
-int score;
 bool gameOver;
+enum eDirection{STOP = 0, LEFT,RIGHT,UP,DOWN}dir;
+const int width = 20;
+int score;
 int Gspeed = 200;
 int height = 20;
-const int width = 20;
 int x, y, fruitX, fruitY, ObstacleX, ObstacleY, Obstacle2X, Obstacle2Y;
 int tailX[100], tailY[100];
 int nTail;
-enum eDirection{STOP = 0, LEFT,RIGHT,UP,DOWN}dir;
 
 void initialize() {
 	score = 0;
